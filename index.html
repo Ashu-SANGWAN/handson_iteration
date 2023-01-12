@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iteration handson</title>
+  </head>
+  <style>
+    body {
+      background-color: bisque;
+    }
+    pre {
+      color: blue;
+    }
+    h3 {
+      color: black;
+    }
+  </style>
+  <body>
+    <h3>Q.1 Find the number of digits</h3>
+    <pre>
+const Find_Digits = (N) => 
+        {
+            let i=0;
+            while(N>0)
+            {
+                N = Math.trunc(N/10);
+                i++;
+            }
+            return i;
+        };</pre
+    >
+    <h3>Q. 2 Find the Fives.</h3>
+    <pre>
+const Find_Five = (N) => 
+        {
+            let i=0;
+            while(N>0)
+            {
+                if(N%10===5){
+                    i++;
+                }
+                N=Math.trunc(N/10);
+            }
+            return i;
+        };
+          </pre
+    >
+    <h3>Q.3 Find sum</h3>
+    <pre>
+const findSum = (n) => {
+        let i=2;
+        let sum=0;
+        while(i<=n)
+        {
+            if(i%2===0)
+            {
+                sum+=i;
+            }
+            i++;
+        }
+        return sum;
+    };</pre
+    >
+    <h3>Q. 4 Find the sum of the digits of a given number.</h3>
+    <pre>
+const Number_Sum = (N) => 
+        {
+            let sum=0;
+            let i=0;
+            while(N>0)
+            {
+                sum+=(N%10);
+                N=Math.trunc(N/10);
+                i++;
+            }
+            return sum;
+        };
+        </pre
+    >
+    <h3>Q.5 Print the odd</h3>
+    <pre>
+const Print_Odd = (N) => 
+        {
+            for(let i=2;i<=N;i++)
+            {
+                if(i===2){
+                    console.log(i);
+                }
+                else if(i%2===1){
+                    console.log(i);
+                }
+            }
+        };
+        </pre
+    >
+    <h3>Q.6 Print the pattern</h3>
+    <pre>
+const Print_pattern = (N) => 
+        {
+          var pattern ='';
+          for (let i=1; i<=N; i++)
+          {
+            for (let j=1; j<=i; j++)
+            {
+              pattern = pattern + '*';
+            }
+            pattern =pattern + '\n'
+          }
+          console.log(pattern);
+        
+        };</pre
+    >
+    <h3>Q.7 Check whether a Number is a prime or not</h3>
+    <pre>
+const Prime_Check = (N) => 
+        {
+          if(N==1)
+          {
+            return "NO";
+          }
+          // 17 : is "only" divisible by 1 and itself 
+          // 17 : is not divisble by any number between 1 and 17 
+          <!-- for(var i=2;i<N;i++) // i goes from 2 to N-1 -->
+          {
+            if(N%i==0)
+            {
+              return "NO"; // Not prime 
+            }
+          }
+          return 'YES'; // Prime 	
+        };
+        </pre>
+    <h3>Q.8 PrintNumbers</h3>
+    <pre>
+const printNumbers = (n) => {
+        let prnt="";
+      for(let i=1; i<=n; i++)
+      {
+        prnt=prnt+i+" ";
+      }
+      console.log(prnt);
+      };
+      </pre
+    >
+    <h3>Q.9 Check whether a Number is a prime or not.</h3>
+    <pre>
+const Prime_Check = (N) => 
+        {
+          if(N==1)
+          {
+            return "NO";
+          }
+          // 17 : is "only" divisible by 1 and itself 
+          // 17 : is not divisble by any number between 1 and 17 
+          for(var i=2;i<N;i++) // i goes from 2 to N-1
+          {
+            if(N%i==0)
+            {
+              return "NO"; // Not prime 
+            }
+          }
+          return 'YES'; // Prime 	
+        };</pre
+    >
+  </body>
+</html>
